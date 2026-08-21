@@ -1,0 +1,35 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "chat.disableAIFeatures": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+  "scm.diffDecorations": "none",
+  "scm.diffDecorationsGutterAction": "none",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.minimap.enabled": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "explorer.confirmDragAndDrop": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "window.menuBarVisibility": "classic",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorTheme": "Dark Modern"
+  // "eslint.runtime": "node"
+}

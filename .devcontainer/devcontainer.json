@@ -1,0 +1,20 @@
+{
+  "name": "Webbserver 1",
+  // Vi går tillbaka till den rena Node 22-bilden där ESLint fungerade direkt
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "humao.rest-client",
+        "mongodb.mongodb-vscode"
+      ]
+    }
+  },
+
+  // Den här raden installerar Git LFS automatiskt i bakgrunden när containern byggs!
+  // Det löser ditt "git push"-problem en gång för alla utan att sabba för eleverna.
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install git-lfs -y && git lfs install"
+}
