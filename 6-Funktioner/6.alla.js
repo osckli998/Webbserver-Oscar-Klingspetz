@@ -1,39 +1,52 @@
-// function packaArtikel(artikelNamn) {
-//   return `Artikeln ${[artikelNamn]} har lagts i lådan`;
+// function greet() {
+//   console.log("Helo darknes");
 // }
 
-// const utt = packaArtikel("T-shirt");
+// greet();
 
-// console.log(utt);
+// function isEven(number) {
+//   if (number % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-const dbUsers = [
-  {
-    id: "usr_99",
-    profil: { name: "oscar", last: "Berg", age: 34 },
-    setings: { theme: "dark" },
-    items: ["tält", "Mat", ],
-  },
-  {
-    id: "usr_98",
-    profil: { name: "Bscar", last: "Oerg", age: 24 },
-    setings: { theme: "dark" },
-    items: ["burg", "Fisk", "Ko", "Tomat"],
-  },
-  {
-    id: "usr_90",
-    profil: { name: "Vscar", last: "Verg", age: 14 },
-    setings: { theme: "dark" },
-    items: ["Katt", "grus", "fågle", ],
-  },
-];
+// console.log(isEven(4));
+// console.log(isEven(7));
 
-const newPacklist = dbUsers.map((user) => {
-  return {
-    id: user.id,
-    owner: `${user.profil.name} ${user.profil.last} ${user.profil.age}`,
-    setings: user.setings.theme,
-    items: user.items.length,
-  };
-});
+// function addNumbers(a, b) {
+//   return a + b;
+// }
 
-console.table(newPacklist);
+// let sum = addNumbers(1, 2);
+
+// console.log(sum);
+
+// const square = (num) => num * num;
+
+// let produckt = square(5);
+
+// console.log(produckt);
+
+// const calcHyp = (a, b) => Math.sqrt(a ** 2 + b ** 2);
+
+// let result = calcHyp(3, 5);
+
+// console.log(result);
+
+// const solvePyt = (a, b, c) => {
+//   if (c === 0) {
+//     return Math.sqrt(a ** 2 + b ** 2);
+//   } else if (a === 0) {
+//     return Math.sqrt(c ** 2 - b ** 2);
+//   } else if (b === 0) {
+//     return Math.sqrt(c ** 2 - a ** 2);
+//   }
+// };
+
+// console.log(solvePyt(0, 5, 7));
+
+// console.log(solvePyt(1, 6, 0));
+
+function celciusToFahrenheit(celsius) {}

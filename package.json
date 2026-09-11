@@ -1,5 +1,23 @@
 {
-  "name": "basrepo",
+  "name": "-y",
   "version": "1.0.0",
-  "type": "commonjs"
+  "type": "commonjs",
+  "description": "demo",
+  "main": "eslint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osckli998/Webbserver-Oscar-Klingspetz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osckli998/Webbserver-Oscar-Klingspetz/issues"
+  },
+  "homepage": "https://github.com/osckli998/Webbserver-Oscar-Klingspetz#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
