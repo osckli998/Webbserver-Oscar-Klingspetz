@@ -1,0 +1,8 @@
+POST https://shiny-space-waddle-wrjjjpqxg75w375j-3000.app.github.dev/
+Content-Type: application/jsojn
+
+{
+  "name": "Oscar",
+  "role": "Rizzlord",
+  "level": 99
+}
