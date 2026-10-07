@@ -11,12 +11,21 @@ app.set("view engine", "pug");
 app.set("views", "views");
 
 app.get("/", (req, res) => {
-  const data = {
-    title: "Pug It",
-    name: "Johan",
-    message: "Sida med Pug #Coolsås",
-  };
-  res.render("home", data);
+  // const data = {
+  //   title: "Pug It",
+  //   name: "Johan",
+  //   message: "Sida med Pug #Coolsås",
+  // };
+  // res.render("home", data);
+  res.send("Hello World");
+});
+
+app.get("/lists", (req, res) => {
+  res.render("lists");
+});
+
+app.get("/creative", (req, res) => {
+  res.render("creative");
 });
 
 app.listen(port, () => {
