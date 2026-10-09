@@ -28,6 +28,10 @@ app.get("/creative", (req, res) => {
   res.render("creative");
 });
 
+app.get("/pug-resort", (req, res) => {
+  res.render("pug-resort");
+});
+
 app.listen(port, () => {
   console.log(`Servern körs på ${port}`);
 });
