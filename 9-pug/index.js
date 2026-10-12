@@ -11,12 +11,6 @@ app.set("view engine", "pug");
 app.set("views", "views");
 
 app.get("/", (req, res) => {
-  // const data = {
-  //   title: "Pug It",
-  //   name: "Johan",
-  //   message: "Sida med Pug #Coolsås",
-  // };
-  // res.render("home", data);
   res.send("Hello World");
 });
 
@@ -30,6 +24,23 @@ app.get("/creative", (req, res) => {
 
 app.get("/pug-resort", (req, res) => {
   res.render("pug-resort");
+});
+
+app.get("/letsrock", (req, res) => {
+  const data = {
+    title: "letsrock",
+    name: "letsrock",
+    message: "letsrock",
+  };
+  res.render("lets", data);
+});
+
+app.get("/if", (req, res) => {
+  const dataobjekt = {
+    isLoggedIn: true,
+    name: "Mange",
+  };
+  res.render("if", dataobjekt);
 });
 
 app.listen(port, () => {
