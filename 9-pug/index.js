@@ -37,12 +37,30 @@ app.get("/letsrock", (req, res) => {
 
 app.get("/if", (req, res) => {
   const dataobjekt = {
-    isLoggedIn: true,
+    isLoggedIn: false,
     name: "Mange",
   };
   res.render("if", dataobjekt);
 });
 
+app.get("/elefant", (req, res) => {
+  const data = {
+    elefanter: [1, 2, 3, 4, 5],
+  };
+  res.render("elefant", data);
+});
+
+app.get("/each", (req, res) => {
+  const data = {
+    products: [
+      { name: "Tröja", price: "10kr" },
+      { name: "Byxor", price: "20kr" },
+      { name: "Hat", price: "30kr" },
+      { name: "Strumpor", price: "100kr" },
+    ],
+  };
+  res.render("each", data);
+});
 app.listen(port, () => {
   console.log(`Servern körs på ${port}`);
 });
