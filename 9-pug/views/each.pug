@@ -6,4 +6,5 @@ html(lang="en")
     title Document
   body 
     each produckt in products 
-    p . #{produckt}
+      p= produckt.name + " pris " + produckt.price 
+      

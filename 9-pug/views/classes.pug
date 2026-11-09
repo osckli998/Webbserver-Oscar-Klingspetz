@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="style.css")
+    title Document
+  body 
+    h1 Klasser 
+    p Lista över klasser och studenter 
+
+    div.klasser
+      each klass in classes
+        div.klass
+          h2 Klass #{klass.classId}
+          each student in klass.students
+            p #{student.id}.#{student.name}

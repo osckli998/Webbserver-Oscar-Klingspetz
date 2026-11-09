@@ -1,0 +1,19 @@
+doctype html
+html(lang="Sv")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body 
+    form(action="/form", method ="post") 
+      label Förnamn: 
+        input(type="text", name = "firstName", required)
+    
+      label Epost: 
+        input(type="email", name = "email", required)
+    
+      label Meddelande: 
+        textarea(name="message", rows ="5") 
+
+      label 
+        input(type="submit", value="Skicka medelande")

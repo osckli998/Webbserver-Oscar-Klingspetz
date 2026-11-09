@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body 
+    form(action="/user/kalle/edit", method="POST") 
+      label andvändar-ID 
+        input(type="text", name="userId", value="60743f6678b3eaa2", readonly)
+      
+      label medlems-status 
+        input(type="text", name="status", value="premium", disabled)
+      
+      label ålder 
+        input(type="text", name="age", min="15", max="100", value="18")
+      
+      label Välj färg 
+        input(type="color", name="themeColor", value="#ff0000")
+      
+      label Submit
+        input(type="submit", valu="spara-ändringar")
