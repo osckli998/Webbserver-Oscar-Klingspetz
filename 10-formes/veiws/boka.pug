@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body 
+    form(action="/boka", method="post")
+      label  Rums typ 
+        select(name="roomType") 
+          option(value="singel") Enkel 
+          option(value="duble") Dubbel
+          option(value="suite") Svit
+      
+      label  Antal nätter (1-14)
+        input(type="range", name="Nights", min="1", max="14")
+
+      lable  När besöker ni? 
+        input(type="date", name="date")
+      
+      lable  
+        input(type="submit", value="Boka")
+
+      lable  
+        input(type="reset", value="Börja om")

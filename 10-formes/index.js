@@ -33,7 +33,25 @@ app.get("/user/kalle/edit", (req, res) => {
 });
 
 app.post("/user/kalle/edit", (req, res) => {
-  res.send(`Motaget. Fyll i igen:  <a href="/user/kale/edit"><Länk</a>`);
+  res.send(
+    `Motaget. Fyll i igen:  <a href="/user/kalle/edit">Redigera<Länk</a>`,
+  );
+});
+
+app.get("/boka", (req, res) => {
+  res.render("boka");
+});
+
+app.post("/boka", (req, res) => {
+  res.send(`Motaget. Fyll i igen:  <a href="/boka">Redigera<Länk</a>`);
+});
+
+app.get("/enkat", (req, res) => {
+  res.render("enkat");
+});
+
+app.post("/enkat", (req, res) => {
+  res.send(`Motaget. Fyll i igen:  <a href="/boka">Fyl i igen:<Länk</a>`);
 });
 
 app.listen(port, () => {

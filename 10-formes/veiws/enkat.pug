@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body 
+    form(action="enkat", method="post")
+      p Vilket operativsystem använder du?
+      label Windows 
+        Input(type="radio" name="os", value="windows")
+      
+      label macOS
+        input(type="radio" name="os", value="macOs") 
+      
+      label Linux
+        input(type="radio" name="os", value="linux") 
+
+      label Favorit skola 
+        input(type="text", name="school", list="schoolList")
+        datalist#schoolList 
+          option(value="Berzan")
+          option(value="Katedral")
+          option(value="Folkunga")
+          option(value="Anders")  
+      
+      label Jag godkänner att mina svar sparas anonymt:
+        input(type="checkbox", name="accept", valu="YES", required)
+      
+      label
+        input(type="submit") 
+      
+
