@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body 
+    form(action="/products", method="POST")
+
+      label Produktnamn:
+
+        input(type="text", name="productName", required)
+
+      label Pris:
+
+        input(type="number", name="productPrice", required)
+
+      label
+
+        input(type="submit", value="Spara produkt")

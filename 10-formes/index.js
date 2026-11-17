@@ -54,6 +54,35 @@ app.post("/enkat", (req, res) => {
   res.send(`Motaget. Fyll i igen:  <a href="/boka">Fyl i igen:<Länk</a>`);
 });
 
+app.get("/products/new", (req, res) => {
+  res.render("products/new");
+});
+
+app.post("/products", (req, res) => {
+  const name = req.body.productName;
+  const price = req.body.productPrice;
+
+  console.log(`[PRODUKT SKAPAD] Namn: ${name}, Pris: ${price} kr`);
+
+  res.redirect("/products/new");
+});
+
+app.get("users/:id/edit", (req, res) => {
+  const userId = req.params.id;
+  res.render("users/edit", { userId: userId });
+});
+
+app.post("/users/:id/update", (req, res) => {
+  const hiddenId = req.body.userId;
+  const newEmail = req.body.email;
+
+  console.log(
+    `[PRODUKT UPPDATERAD] Användar-ID: ${hiddenId}, Ny e-post: ${newEmail}`,
+  );
+
+  res.redirect("/users/redirect/${hiddenId}/edit");
+});
+
 app.listen(port, () => {
   console.log(`Servern körs på ${port}`);
 });
